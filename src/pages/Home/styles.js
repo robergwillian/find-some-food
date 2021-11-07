@@ -14,7 +14,7 @@ export const Container = styled.aside`
   overflow-x: hidden;
 
   @media (max-width: 765px) {
-    width: 90%;
+    width: 100%;
   }
 `;
 
