@@ -11,7 +11,11 @@ export const Container = styled.aside`
   height: 100vh;
   overflow-y: auto;
   width: 360px;
-  overflow-x:hidden;
+  overflow-x: hidden;
+
+  @media (max-width: 765px) {
+    width: 100%;
+  }
 `;
 
 export const Search = styled.section`
@@ -24,12 +28,18 @@ export const Search = styled.section`
 
 export const Logo = styled.img`
   margin-bottom: 20px;
-  width:300px;
+  width: 300px;
 `;
 
 export const Map = styled.div`
   background: black;
   width: 500px;
+`;
+
+export const MapWrapper = styled.div`
+  @media (max-width: 765px) {
+    display: none;
+  }
 `;
 
 export const Carousel = styled(Slider)`
@@ -50,19 +60,19 @@ export const CarouselTitle = styled.h1`
 export const ModalTitle = styled.p`
   margin-bottom:10px;
   letter-spacing:0.11px;
-  color: ${props => props.theme.colors.text}
+  color: ${(props) => props.theme.colors.text}
   text-transform: none;
   line-height: 30px;
   font-size:24px;
   font-weight: bold;
-  font-family: ${props => props.theme.fonts.fontFamily};
+  font-family: ${(props) => props.theme.fonts.fontFamily};
 `;
 
 export const ModalContent = styled.p`
 margin-bottom:10px;
-color: ${props => props.theme.colors.text}
+color: ${(props) => props.theme.colors.text}
 text-transform: none;
 line-height: 20px;
 font-size:16px;
-font-family: ${props => props.theme.fonts.fontFamily};
+font-family: ${(props) => props.theme.fonts.fontFamily};
 `;

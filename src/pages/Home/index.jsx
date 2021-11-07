@@ -16,6 +16,7 @@ import {
   Carousel,
   ModalTitle,
   ModalContent,
+  MapWrapper
 } from "./styles";
 import { useSelector } from "react-redux";
 
@@ -101,8 +102,9 @@ function Home() {
             />
           ))}
         </Container>
-
-        <Map query={query} placeId={placeId} />
+        <MapWrapper>
+          <Map query={query} placeId={placeId} />
+        </MapWrapper>  
 
         <Modal open={modalOpened} onClose={() => setModalOpened(false)}>
           {restaurantSelected ? (
