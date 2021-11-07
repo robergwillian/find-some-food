@@ -14,7 +14,7 @@ export const Container = styled.aside`
   overflow-x: hidden;
 
   @media (max-width: 765px) {
-    width: 100%;
+    width: 90%;
   }
 `;
 
@@ -27,8 +27,9 @@ export const Search = styled.section`
 `;
 
 export const Logo = styled.img`
-  margin-bottom: 20px;
-  width: 300px;
+  max-width: 100%;
+  max-height:100%;
+  margin:20px auto;
 `;
 
 export const Map = styled.div`
